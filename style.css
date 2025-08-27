@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+}
+
+.header {
+  grid-column: 2 / 4;
+}
+
+.sidebar {
+  grid-row: 1 / 4;
+}
+
+.main {
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard a {
+  text-decoration: none;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.options a {
+  text-decoration: none;
+}
