@@ -1,8 +1,9 @@
+/* ==================Reset============================= */
 * {
   padding: 0;
   margin: 0;
 }
-
+/* ==================Theme variables=================== */
 :root {
   /* Primary Colors */
   --color-sidebar: #1992d4;
@@ -16,7 +17,7 @@
   --color-bg: #f1f5f9;
   --color-card: #ffffff;
   --color-header: #e5e7eb;
-  --color-searchbar: #d1d5db;
+  --color-searchbar: #dbdee4;
 
   /* Text */
   --color-text-primary: #111827;
@@ -24,7 +25,7 @@
   --color-text-muted: #6b7280;
   --color-text-sidebar: #ffffff;
 }
-
+/* =====================Main Structure================ */
 body {
   font-family: sans-serif;
   display: flex;
@@ -43,10 +44,33 @@ body {
   box-shadow: 0px 10px 10px lightslategray;
 }
 
+/* ==================Header Section Design ======================= */
 .header {
   grid-column: 2 / 4;
 }
 
+.search {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 45px;
+  gap: 10px;
+}
+
+.search-icon {
+  color: var(--color-text-secondary);
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+
+.search > input {
+  background-color: var(--color-searchbar);
+  width: 400px;
+  border: none;
+  border-radius: 15px;
+}
+
+/* ==================Sidebar Section Design ====================== */
 .sidebar {
   grid-row: 1 / 4;
   background-color: var(--color-sidebar);
@@ -100,6 +124,7 @@ body {
   height: 24px;
 }
 
+/* ==================Main Section Design ====================== */
 .main {
   grid-area: 2 / 2 / 4 / 4;
 }
