@@ -22,7 +22,7 @@
   /* Text */
   --color-text-primary: #111827;
   --color-text-secondary: #374151;
-  --color-text-muted: #6b7280;
+  --color-text-muted: #606267;
   --color-text-sidebar: #ffffff;
 }
 /* =====================Main Structure================ */
@@ -37,8 +37,8 @@ body {
 .container {
   display: grid;
   height: 100vh;
-  width: 65%;
-  grid-template-columns: 1fr 2fr 1fr;
+  width: 90vw;
+  grid-template-columns: 0.7fr 2fr 1fr;
   grid-template-rows: 0.7fr 2fr 2fr;
   background-color: white;
   box-shadow: 0px 10px 10px lightslategray;
@@ -113,7 +113,7 @@ body {
 }
 
 h2 {
-  font-size: large;
+  font-size: 1.3rem;
 }
 
 .buttons {
@@ -190,5 +190,105 @@ h2 {
 .main {
   grid-area: 2 / 2 / 4 / 4;
   background-color: var(--color-bg);
-  padding: 50px;
+  padding-left: 20px;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 50px;
+}
+/* ==================Your Projects Area ======================== */
+.projects {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--color-card);
+  border-left: solid 5px var(--color-accent-yellow);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(168, 168, 168);
+  height: 180px;
+  padding: 30px 20px;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.card > p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+/* =================Announcements Area =========================== */
+.announcements-card {
+  display: grid;
+  gap: 15px;
+  background-color: var(--color-card);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(168, 168, 168);
+  width: 220px;
+  margin-top: 20px;
+  padding: 30px 20px;
+}
+
+.divider {
+  border-top: 1px solid lightgrey;
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.announcement > h4 {
+  font-size: 0.8rem;
+}
+
+.announcement > p {
+  font-size: 0.6rem;
+  color: var(--color-text-muted);
+}
+
+/* ===============Trending Area====================================== */
+.trending-card {
+  display: grid;
+  gap: 15px;
+  background-color: var(--color-card);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(168, 168, 168);
+  width: 220px;
+  margin-top: 20px;
+  padding: 30px 20px;
+}
+
+.trending-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  height: 35px;
+  width: auto;
+  border-radius: 50px;
+}
+
+h5 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.tag > p {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
 }
