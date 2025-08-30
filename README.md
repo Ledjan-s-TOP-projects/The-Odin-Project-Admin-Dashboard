@@ -35,6 +35,6 @@ It includes:
 
 ## 🔗 Live Demo
 
-[View on GitHub Pages]()
+[View on GitHub Pages](https://ledjan-s-top-projects.github.io/The-Odin-Project-Admin-Dashboard/)
 
 ---
