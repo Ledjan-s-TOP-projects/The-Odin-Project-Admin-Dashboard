@@ -52,12 +52,12 @@ body {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 .search {
   display: flex;
   align-items: center;
-  margin-top: 30px;
   margin-left: 45px;
   gap: 10px;
 }
@@ -78,10 +78,9 @@ body {
 }
 
 .notifications {
+  justify-self: center;
   display: flex;
   gap: 30px;
-  margin-top: 30px;
-  margin-left: 45px;
   align-items: center;
 }
 
@@ -95,7 +94,6 @@ body {
   display: flex;
   gap: 20px;
   margin-left: 45px;
-  margin-top: 20px;
 }
 
 .profile > img {
@@ -113,9 +111,9 @@ h2 {
 }
 
 .buttons {
+  justify-self: center;
   display: flex;
   align-items: center;
-  margin-left: 45px;
   gap: 20px;
 }
 
