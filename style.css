@@ -71,7 +71,7 @@ body {
 
 .search > input {
   background-color: var(--color-searchbar);
-  width: 420px;
+  width: 500px;
   height: 30px;
   border: none;
   border-radius: 15px;
